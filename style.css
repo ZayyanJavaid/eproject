@@ -1,0 +1,930 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ :root{
+    --clr-dark: black;
+    --clr-mid: rgb(65, 64, 64);
+    --clr-lgt: rgb(162, 162, 162);
+ }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 0 2rem;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 140px;
+    height: 87px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    font-size: 15px;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    display: none;
+
+}
+
+/* .homepage {
+    font-size: 17.7px;
+    color: black;
+    padding: 15px 20px;
+} */
+
+ul li.homepage a {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+ ul li.homepage a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+ }
+
+.li1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.li1:hover {
+    background-color:   black;
+    color: white;
+    border-radius: 3px;
+}
+
+.li2 {
+    color: black;
+}
+
+.li2:hover {
+    font-weight: bold;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    background-color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    padding: 13px 15px;
+    background-color:   black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid   black;
+    border-radius: 3px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+}
+
+.cart-button {
+    /* margin-top: 100px; */
+    position:  relative;
+    top: 0rem;  /* Changed from bottom to top */
+    right: 0rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* z-index: 999; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 0.3s ease-in-out;
+}
+
+.box1{
+    display: flex;
+    gap: 7px;
+    margin-right: 10px;
+}  
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#pic1 {
+    width: 100%;
+    height: 720px;
+}
+
+.div2 {
+    text-align: center;
+    background-color: black;
+    margin-top: -10px;
+}
+
+.div2h {
+    /* font-weight: normal; */
+    padding-top: 70px;
+    font-size: 80px;
+    color: var(--clr-lgt);
+}
+
+/* .div2hr {
+    
+    padding: 2px 0px;
+    margin: 20px 720px;
+    background-color:  var(--clr-lgt);
+} */
+
+.div2pera {
+    padding: 20px 400px;
+    line-height: 27px;
+    font-size: 20px;
+    color:  var(--clr-lgt)
+}
+
+.parent {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+
+.child {
+    width: 320px; /* Reduced from 350px to match the image width */
+    height: auto; /* Changed from fixed 600px to auto */
+    background-color: rgb(24, 22, 22);
+    overflow: hidden; /* Added to contain content */
+    display: flex;
+    flex-direction: column;
+}
+
+.childimg {
+    width: 320px; /* Set exact width to match the container */
+    height: 320px; /* Fixed height for image */
+    max-width: 100%;
+    object-fit: cover;
+}
+
+img {
+    width: 350px;
+    height: 430px;
+    max-width: 100%;
+    height: auto;
+}
+
+.childh {
+    text-align: center;
+    padding: 15px 10px;
+    color:  var(--clr-lgt);
+    font-size: 1.5rem;
+}
+
+.childpera {
+    text-align: center;
+    padding: 10px 15px;
+    color:  var(--clr-lgt);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.div {
+    width: 100%;
+    /* height: 900px; */
+    background-color: transparent;
+    text-align: center;
+    /* flex-direction: row; */
+    background-image: url(images/bodypic.jpg);
+    background-attachment: fixed;
+}
+
+.divh {
+    font-size: 70px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: normal;
+}
+
+.box {
+    width: 320px; /* Matches the width of scndcardimg */
+    max-width: 800px;
+    height: 365px;
+    margin: 0 auto;
+    background-color: white;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.scndcardimg {
+    width: 320px; /* Set exact width to match box */
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+
+.box h3 {
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 150px;
+
+}
+
+h3 {
+    padding-top: 18px;
+}
+
+
+
+.section04 {
+    width: 100%;
+    height: 500px;
+    background-color:  var(--clr-lgt);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4h {
+    font-weight: normal;
+    font-size: 52px; /* Increased from 45px to be more like h2 size */
+    text-align: center;
+    padding: 30px 0px;
+    color: white;
+}
+
+#section4pera {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+hr {
+    width: 5%;
+    margin-top: 40px;
+}
+
+.parent5 {
+    width: 100%;
+    background-color: aqua;
+}
+
+.section5 {
+    width: 100%;
+    background-color: black;
+    padding: 60px 20px;
+}
+
+.secfiveH {
+    text-align: center;
+    font-size: clamp(32px, 5vw, 50px);
+    color: var(--clr-lgt);
+    margin-bottom: 30px;
+}
+
+.secfivehone,
+.secfivescndH {
+    font-size: clamp(20px, 3vw, 24px);
+    color: var(--clr-lgt);
+    padding: 20px max(20px, 10%);
+    margin-top: 30px;
+}
+
+.secfivepera,
+.secfivescndpera {
+    color: var(--clr-lgt);
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.6;
+    padding: 0 max(20px, 10%);
+}
+
+.secfivethirdpera,
+.secfiveforthpera,
+#secfivefifthpera {
+    display: flex;
+    align-items: center;
+    padding: 15px max(20px, 10%);
+    font-size: clamp(14px, 2vw, 16px);
+    color: var(--clr-lgt);
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.secfivehr2 {
+    width: 60%;
+    height: 1px;
+    background-color: var(--clr-lgt);
+    margin: 5px 0 5px max(20px, 10%); /* Left align with text and adjust spacing */
+    display: block;
+}
+
+.secfivethirdpera,
+.secfiveforthpera,
+#secfivefifthpera {
+    
+    padding-left: max(20px, 10%);
+    padding-right: max(20px, 10%);
+    max-width: 800px;
+}
+
+.secfivehone {
+    color:  var(--clr-lgt);
+    margin-top: 90px;
+    /* padding: 5px 180px; */
+    padding-left: max(20px, 12%);
+}
+
+.secfivepera {
+    color:  var(--clr-lgt);
+    font-size: 13px;
+    /* padding: 5px 180px; */
+    padding-left: max(20px, 12%); 
+    line-height: 20px;
+}
+
+.secfivescndH {
+    margin-top: 50px;
+    padding: 5px;
+    padding-left: max(20px, 12%);
+    color: var(--clr-lgt);
+    text-align: left;
+}
+
+.secfivescndpera {
+    color: var(--clr-lgt);
+    font-size: 13px;
+    padding: 5px;
+    padding-left: max(20px, 12%);
+    line-height: 20px;
+    text-align: left;
+}
+
+#icon {
+    color:  var(--clr-lgt);
+    padding-right: 20px;
+}
+
+.secfivethirdpera {
+    color:  var(--clr-lgt);
+    margin-top: 50px;
+    padding: 12px 180px;
+}
+
+.secfivehr2 {
+    width: 60%;
+     
+    margin: 10px 180px;
+}
+
+#secfivefifthpera {
+    padding: 12px max(20px, 10%);
+    margin-left: 0; /* Remove the margin */
+    display: flex;
+    align-items: center;
+    padding-left: max(20px, 10%); /* Match email padding */
+}
+
+a {
+    text-decoration: none;
+    color:  var(--clr-lgt);
+    font-size: 15px;
+}
+
+.secfiveforthpera {
+    padding: 12px 180px;
+}
+
+.secsixparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:   var(--clr-mid);
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.secsixbox2 {
+    width: 70%;
+    border-bottom: 1px solid  white;
+}
+
+.secsixbox3 {
+    color:  var(--clr-lgt);
+}
+
+#secsixbox {
+    padding: 35px 0px;
+}
+
+#linkicon {
+    color:  var(--clr-lgt);
+}
+
+#linkicon:hover {
+    color: gray;
+    size: 05px;
+}
+
+#secsixpera {
+    text-align: center;
+    font-size: clamp(12px, 2vw, 16px);
+    line-height: 1.5;
+    padding: 10px;
+    color: var(--clr-lgt);
+    max-width: 1200px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+/* Add hamburger styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--clr-dark);
+    transition: all 0.3s ease;
+}
+
+/* Add Media Queries */
+ 
+@media screen and (max-width: 1250px) {
+    .div2h{
+        font-size: 60px;
+    }
+
+    .div2pera{
+        padding: 20px 200px;
+    }
+}
+
+ 
+
+@media screen and (max-width: 1055px){
+    .parent{
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 1007px){
+    .parent{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ 
+
+@media screen and (max-width: 900px) {
+    #section4h{
+        font-family: 30px;
+    }
+
+    #secsixpera{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 815px){
+    .div2h{
+        font-size: 50px;
+    }
+
+    .div2pera{
+        padding: 20px 50px;
+    }
+
+    .divh{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width:662px) {
+    .div2h{
+        font-size: 35px;
+    }
+
+    .div2pera{
+        padding: 20px 50px;
+    }
+}
+
+ @media screen and (max-width: 600px) {
+    #secsixpera{
+        font-size: 15px;
+    }
+ }
+
+@media screen and (max-width: 540px){
+    .divh{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .div2h{
+        font-size: 30px;
+    }
+
+    .div2pera{
+        padding: 20px 20px;
+        font-size: 15px;
+    }
+
+    .divh{
+        font-size: 35px;
+    }
+
+    .box{
+        width: 270px;
+    }
+
+    .child{
+        width: 270px;
+    }
+
+    .parent{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section5 {
+        padding: 40px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section5 {
+        padding: 30px 10px;
+    }
+    
+    .secfivehone,
+    .secfivescndH,
+    .secfivepera,
+    .secfivescndpera,
+    .secfivethirdpera,
+    .secfiveforthpera,
+    #secfivefifthpera {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .secfivehr2 {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    #secfivefifthpera {
+        padding-left: 20px;
+    }
+
+    #secsixpera {
+        padding: 10px 20px;
+        font-size: clamp(10px, 1.8vw, 14px);
+    }
+
+    #section4h {
+        font-size: 35px; /* Increased from 28px for better readability */
+    }
+
+    .contact-info-container {
+        gap: 15px;
+    }
+
+    .secsixparent {
+        flex-direction: column; /* Stack on mobile */
+        padding: 15px;
+    }
+
+    .secsixbox1 ul {
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section5 {
+        padding: 20px 10px;
+    }
+    
+    .secfivehr2 {
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    #secsixpera {
+        padding: 10px 15px;
+        font-size: clamp(9px, 1.5vw, 12px);
+    }
+    
+    .secsixparent {
+        padding: 15px 10px;
+    }
+}
+
+/* Update hamburger styles */
+@media screen and (max-width: 998px) { /* Changed from 996px to 998px */
+    .hamburger {
+        display: block;
+        z-index: 100;
+    }
+    
+    .box1 {
+        position: fixed;
+        top: 85px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 85px);
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        transition: 0.3s;
+    }
+    
+    .box1.active {
+        right: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    ul li ul.dropdown {
+        position: static;
+        width: 100%;
+        background: #f4f4f4;
+    }
+
+    .nav_bar {
+        padding: 0 1rem;
+    }
+
+    /* Add new contact layout styles */
+    .secfivethirdpera,
+    .secfiveforthpera,
+    #secfivefifthpera {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .secfivehr2 {
+        display: none; /* Hide the horizontal lines */
+    }
+
+    /* Container for contact info */
+    .contact-info-container {
+        display: flex;
+        flex-direction: row; /* Ensure row direction */
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    #icon {
+        margin-right: 8px;
+    }
+}
+
+/* ...existing code... */
+
+@media screen and (min-width: 1245px) {
+    .contact-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-left: max(20px, 12%);
+    }
+
+    .secfivethirdpera,
+    .secfiveforthpera,
+    #secfivefifthpera {
+        margin: 5px 0;
+        padding-left: 0;
+    }
+
+    .secfivehr2 {
+        margin-left: max(20px, 12%);
+        width: 50%;
+    }
+}
+
+/* ...rest of existing code... */
+
+@media screen and (max-width: 1245px) {
+    .contact-info-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding-left: max(20px, 12%);
+    }
+
+    .secfivethirdpera,
+    .secfiveforthpera,
+    #secfivefifthpera {
+        margin: 5px 0;
+        padding-left: 0;
+        flex: 1;
+    }
+
+    .secfivehr2 {
+        display: none; /* Hide horizontal lines in row layout */
+    }
+}
+
+/* Adjust mobile view */
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+}
+
+/* ...rest of existing code... */
+
+.secsixbox1 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.secsixbox1 ul li a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.secsixbox1 ul li a::after {
+    content: attr(data-text);
+    display: block;
+    color: var(--clr-lgt);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .secsixbox1 ul li a::after {
+        display: none;
+    }
+}
+
+/* ...rest of existing code... */
+
+.secsixbox1 ul {
+    display: flex;
+    flex-direction: row; /* Explicitly set row direction */
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#linkicon {
+    font-size: 2.5em; /* Consistent icon size */
+    transition: color 0.3s ease;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    .secsixbox1 ul {
+        gap: 20px;
+    }
+    
+    #linkicon {
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .secsixparent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ...rest of existing code... */
+
+
+
+
+

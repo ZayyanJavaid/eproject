@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="BRWstyles.css">
+    <link rel="shortcut icon" href="BRWimages/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="nav_bar">
+        <div class="logo-container">
+            <img src="BRWimages/logo.jpg" alt="" class="logo">
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- <div class="nav-links">
+          
+        </div> -->
+        <div class="box1">
+            <ul>
+                <li class="homepage"><a href="index.html" class="li1">Home</a></li>
+                <li>
+                    <a href="LRindex.html" class="li1">LivingRoom </a>
+                    <!-- <ul class="dropdown">
+                        <li><a href="#" class="li2">FloorTiles</a></li>
+                        <li><a href="#" class="li2">WallTiles</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="" class="li1">BedRoom </a>
+                    <ul class="dropdown">
+                        <li><a href="BRFindex.html" class="li2">FloorTiles</a></li>
+                        <li><a href="#" class="li2">WallTiles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="li1">Kitchen </a>
+                    <ul class="dropdown">
+                        <li><a href="KFTindex.html" class="li2">FloorTiles</a></li>
+                        <li><a href="KWTindex.html" class="li2">WallTiles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="li1">Bathroom </a>
+                    <ul class="dropdown">
+                        <li><a href="BTFindex.html" class="li2">FloorTiles</a></li>
+                        <li><a href="BTWindex.html" class="li2">WallTiles</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="btn"><a href="Login.html">Login</a></button>
+            <button class="btn" id="btn"><a href="SignUp.html">SignUp</a></button><br>
+            <button class="cart-button" id="cartButton">
+                <span class="cart-count">0</span>
+                🛒
+            </button>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="BRWimages/image 1.png" alt="Slide 1" class="slide">
+            <img src="BRWimages/image2.png" alt="Slide 2" class="slide">
+            <img src="BRWimages/image3.png" alt="Slide 3" class="slide">
+            <img src="BRWimages/image 4.png" alt="Slide 4" class="slide">
+        </div>
+        <button class="slider-btn prev-btn">❮</button>
+        <button class="slider-btn next-btn">❯</button>
+    </div>
+
+    <div class="container">
+        <!-- First Card - Ceramic Tile -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic1.jpg" alt="White Ceramic Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Premium Ceramic Tile</h1>
+                <p class="product-price">$199.99/m²</p>
+                <p class="product-description">
+                    Classic ceramic tiles with stain-resistant finish,
+                    perfect for high-traffic kitchen areas.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Second Card - Porcelain Tile -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic2.jpg" alt="Marble Effect Porcelain Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Luxury Porcelain Tile</h1>
+                <p class="product-price">$179.99/m²</p>
+                <p class="product-description">
+                    Premium porcelain tiles with marble effect,
+                    durable and water-resistant.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Third Card - Natural Stone -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic3.jpg" alt="Natural Stone Kitchen Floor">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Natural Stone Tile</h1>
+                <p class="product-price">$159.99/m²</p>
+                <p class="product-description">
+                    Elegant natural stone tiles with unique patterns,
+                    adds luxury to any kitchen space.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Fourth Card - Terracotta -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic4.jpg" alt="Terracotta Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Rustic Terracotta</h1>
+                <p class="product-price">$149.99/m²</p>
+                <p class="product-description">
+                    Traditional terracotta tiles with rustic charm,
+                    ideal for Mediterranean style kitchens.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Fifth Card - Granite -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic5.jpg" alt="Granite Floor Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Premium Granite Tile</h1>
+                <p class="product-price">$139.99/m²</p>
+                <p class="product-description">
+                    Durable granite tiles with a polished finish,
+                    perfect for modern kitchen designs.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Sixth Card - Slate -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic6.jpg" alt="Slate Kitchen Floor">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Elegant Slate Tile</h1>
+                <p class="product-price">$129.99/m²</p>
+                <p class="product-description">
+                    Natural slate tiles with a textured surface,
+                    ideal for rustic and contemporary kitchens.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Seventh Card - Marble -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic7.jpg" alt="Marble Kitchen Floor">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Luxury Marble Tile</h1>
+                <p class="product-price">$119.99/m²</p>
+                <p class="product-description">
+                    Exquisite marble tiles with natural veining,
+                    adds elegance to any kitchen space.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Eighth Card - Mosaic -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic8.jpg" alt="Mosaic Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Artistic Mosaic Tile</h1>
+                <p class="product-price">$109.99/m²</p>
+                <p class="product-description">
+                    Colorful mosaic tiles with intricate patterns,
+                    perfect for creating unique kitchen designs.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Ninth Card - Travertine -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic9.jpg" alt="Travertine Kitchen Floor">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Classic Travertine Tile</h1>
+                <p class="product-price">$99.99/m²</p>
+                <p class="product-description">
+                    Timeless travertine tiles with a natural finish,
+                    ideal for traditional and modern kitchens.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Tenth Card - Quarry -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic10.jpg" alt="Quarry Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Durable Quarry Tile</h1>
+                <p class="product-price">$89.99/m²</p>
+                <p class="product-description">
+                    Robust quarry tiles with a non-slip surface,
+                    perfect for high-traffic kitchen areas.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Eleventh Card - Glass -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic11.jpg" alt="Glass Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Modern Glass Tile</h1>
+                <p class="product-price">$79.99/m²</p>
+                <p class="product-description">
+                    Sleek glass tiles with a reflective surface,
+                    adds a contemporary touch to any kitchen.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Twelfth Card - Cement -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="BRWimages/pic12.jpg" alt="Cement Kitchen Tile">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Industrial Cement Tile</h1>
+                <p class="product-price">$69.99/m²</p>
+                <p class="product-description">
+                    Stylish cement tiles with a matte finish,
+                    perfect for industrial-style kitchens.
+                </p>
+                <div class="product-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="secsixparent">
+            <div class="secsixbox1" id="secsixbox">
+                <ul>
+                    <li><a href="https://www.facebook.com/login.php/" target="_blank"><i
+                                class=" fa-brands fa-facebook fa-3x" id="linkicon"></i></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i
+                                class=" fa-brands fa-instagram fa-3x" id="linkicon"></i></a></li>
+                    <li><a href=""><i class=" fa-brands fa-youtube fa-3x" id="linkicon"></i></a></li>
+                </ul>
+            </div>
+            <div class="secsixbox2">
+
+            </div>
+            <div id="secsixbox" class="secsixbox3">
+                <p class="secsixpera">COPYRIGHT © 2024 ROYAL TILES & CERAMICS LIMITED | ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="BRWscript.js"></script>
+</body>
+</html>
